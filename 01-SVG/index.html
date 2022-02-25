@@ -1,37 +1,143 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
     <script src="js/script.js" async></script>
 
     <title>1-SVG</title>
   </head>
   <body>
-
     <h1>Dessiner des formes</h1>
     <h2>Rectangle</h2>
-
+    <svg>
+      <rect width="400" height="100" fill="#ff0000" />
+    </svg>
     <h2>Donut</h2>
-
-
+    <svg>
+      <circle
+        cx="50"
+        cy="50"
+        r="60"
+        fill="none"
+        stroke="#000000"
+        transform="translate(15,15)"
+      />
+      <circle
+        cx="50"
+        cy="50"
+        r="30"
+        fill="none"
+        stroke="#000000"
+        transform="translate(15,15)"
+      />
+    </svg>
     <h2>Ligne</h2>
-
-
+    <svg>
+      <line x1="20" y1="0" x2="50" y2="60" stroke="#0000ff" />
+    </svg>
     <h2>Path</h2>
-
-
+    <svg id="prenom">
+      <!-- B -->
+      <path
+        d="M 10 10 L 10 200"
+        fill="none"
+        stroke="#FF6917"
+        stroke-width="4"
+      ></path>
+      <path
+        d="M 8 200 C 100 200 100 110 10 100"
+        fill="none"
+        stroke="#FF6917"
+        stroke-width="4"
+      ></path>
+      <path
+        d="M 10 100 C 100 100 100 10 9 11"
+        fill="none"
+        stroke="#FF6917"
+        stroke-width="4"
+      ></path>
+      <!-- e -->
+      <path
+        d="M 100 140 L 200 140"
+        fill="none"
+        stroke="#FF6917"
+        stroke-width="4"
+      ></path>
+      <path
+        d="M 200 140 C 190 60 110 60 100 130 100 180 160 220 200 170"
+        fill="none"
+        stroke="#FF6917"
+        stroke-width="4"
+      ></path>
+      <!-- n -->
+      <path
+        d="M 230 80 L 230 200"
+        fill="none"
+        stroke="#FF6917"
+        stroke-width="4"
+      ></path>
+      <path
+        d="M 230 100 C 260 60 350 70 330 200"
+        fill="none"
+        stroke="#FF6917"
+        stroke-width="4"
+      ></path>
+      <!-- a -->
+      <path
+        d="M 460 200 C 460 120 450 50 360 80 "
+        fill="none"
+        stroke="#FF6917"
+        stroke-width="4"
+      ></path>
+      <path
+        d="M 460 190 C 300 210 370 110 446 100"
+        fill="none"
+        stroke="#FF6917"
+        stroke-width="4"
+      ></path>
+      <!-- i -->
+      <path
+        d="M 490 80 L 490 200"
+        fill="none"
+        stroke="#FF6917"
+        stroke-width="4"
+      ></path>
+      <path
+        d="M 490 60 L 490 70"
+        fill="none"
+        stroke="#FF6917"
+        stroke-width="4"
+      ></path>
+      <!-- a -->
+      <path
+        d="M 620 200 C 640 120 610 50 520 80 "
+        fill="none"
+        stroke="#FF6917"
+        stroke-width="4"
+      ></path>
+      <path
+        d="M 620 190 C 460 210 530 110 606 100"
+        fill="none"
+        stroke="#FF6917"
+        stroke-width="4"
+      ></path>
+    </svg>
     <h1>Animer des formes</h1>
 
     <h2>On click</h2>
 
     <h2>On hover</h2>
 
-    <h2>Prenez la première lettre de votre prénom que vous avez créée ci-dessus. Faite bouger une forme de votre choix le long de la lettre</h2>
-
-
+    <h2>
+      Prenez la première lettre de votre prénom que vous avez créée ci-dessus.
+      Faite bouger une forme de votre choix le long de la lettre
+    </h2>
   </body>
 </html>
