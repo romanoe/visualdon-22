@@ -145,12 +145,60 @@
     <h1>Animer des formes</h1>
 
     <h2>On click</h2>
-
+    <svg>
+      <rect class="changecolor" width="400" height="100" fill="#ff0000" />
+    </svg>
     <h2>On hover</h2>
-
+    <svg class="rayonbig">
+      <circle
+        class="rayonhoover"
+        fill="#ffffff"
+        cx="50"
+        cy="50"
+        r="60"
+        fill="none"
+        stroke="#000000"
+        transform="translate(50,50)"
+      />
+      <circle
+        cx="50"
+        cy="50"
+        r="30"
+        fill="none"
+        stroke="#000000"
+        transform="translate(50,50)"
+      />
+    </svg>
     <h2>
       Prenez la première lettre de votre prénom que vous avez créée ci-dessus.
       Faite bouger une forme de votre choix le long de la lettre
     </h2>
+    <!-- B -->
+    <svg id="prenom">
+      <path
+        d="M 10 10 L 10 200"
+        fill="none"
+        stroke="#FF6917"
+        stroke-width="4"
+      ></path>
+      <path
+        d="M 8 200 C 100 200 100 110 10 100"
+        fill="none"
+        stroke="#FF6917"
+        stroke-width="4"
+        id="theMotionPath"
+      ></path>
+      <path
+        d="M 10 100 C 100 100 100 10 9 11"
+        fill="none"
+        stroke="#FF6917"
+        stroke-width="4"
+      ></path>
+      <circle cx="" cy="" r="10" fill="#0000ff" stroke="none">
+        <animateMotion dur="6s" repeatCount="indefinite">
+          <mpath xlink:href="#theMotionPath" />
+        </animateMotion>
+      </circle>
+    </svg>
   </body>
 </html>

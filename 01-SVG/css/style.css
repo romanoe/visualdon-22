@@ -6,3 +6,15 @@ body {
   height: 300px;
   width: 100%;
 }
+
+.onclickcolor {
+  fill: #0000ff;
+}
+
+.rayonbig {
+  height: 200px;
+}
+
+.rayonhoover:hover {
+  r: 80;
+}
