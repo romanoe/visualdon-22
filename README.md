@@ -11,20 +11,20 @@ Ce document sera mis à jour au fur et à mesure du semestre avec les informatio
 ## Exercices
 * [Exercice 1](https://github.com/romanoe/visualdon-22/tree/main/01-SVG): Dessiner et animer des formes SVG. ❗ Délai du rendu: **4 mars, 23h59** ❗
 * [Exercice 2](https://github.com/romanoe/visualdon-22/tree/main/02-intro-d3) : Introduction à D3 ❗ Délai du rendu: **11 mars, 23h59** ❗
-
+* [Exercice 3](https://github.com/romanoe/visualdon-22/tree/main/03-d3-data) : Données ❗ Délai du rendu: **23 mars, 23h59** ❗
 
 ## Projet
 
 ### But
-* Créer une visualisation intéractive à partir d'un ou plusieurs jeux de données
+* Créer une visualisation interactive à partir d'un ou plusieurs jeux de données
 * Le choix de types, et le nombre de visualisations est libre
 * Le tout doit faire passer un message, raconter une histoire 
 
 ### Délais
-* Vendredi 11 mars 23h59: Thématique (10%)
+* Vendredi 11 mars 23h59: [Thématique](https://github.com/romanoe/visualdon-22/tree/main/projet) (10%)
 * Vendredi 18 mars 23h59: Wireframe (10%)
 * Vendredi 6 mai 23h59: Site web (60%)
-* Mercredi 11 mai, vendredi 23 mai: Présentation (20%)
+* Mercredi 11 mai, vendredi 13 mai: Présentation (20%)
 
 ### Format
 
@@ -34,9 +34,11 @@ Ce document sera mis à jour au fur et à mesure du semestre avec les informatio
 
 ## Ressources
 ### SVG
-* [Cours de l'année passée](https://observablehq.com/@idris-maps/svg)
+* [Cours 2021](https://observablehq.com/@idris-maps/svg)
 * [Tutoriel MDN](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial)
 
 ### D3
+* [Cours 2021](https://observablehq.com/@idris-maps/introduction-a-d3)
 * https://d3js.org/
 * https://www.d3-graph-gallery.com/
+* https://observablehq.com/collection/@d3/learn-d3
