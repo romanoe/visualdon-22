@@ -105,7 +105,6 @@ var svg2 = d3
 
 var bars = svg2.append("g").attr("class", "bars");
 
-// Bind data to chart, and create bars
 bars
   .selectAll("rect")
   .data(dataset)
