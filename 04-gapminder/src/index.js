@@ -51,14 +51,9 @@ function buildData(PIB, life, population) {
   readData(datas);
 }
 
-//Read the data
-// d3.csv(
-//   "https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/4_ThreeNum.csv"
-// ).then(function (data) {
-
 function readData(data) {
   // Add X axis
-  const x = d3.scaleLinear().domain([0, 12000]).range([0, width]);
+  const x = d3.scaleLinear().domain([0, 100000]).range([0, width]);
   svg
     .append("g")
     .attr("transform", `translate(0, ${height})`)
@@ -79,11 +74,25 @@ function readData(data) {
     .selectAll("dot")
     .data(data)
     .join("circle")
-    .attr("cx", (d) => x(d.PIB))
-    .attr("cy", (d) => y(d.esperance_vie))
-    .attr("r", (d) => z(d.population))
-    .attr("r", 10)
+    .attr("cx", (d) => x(cleanData(d.PIB)))
+    .attr("cy", (d) => y(cleanData(d.esperance_vie)))
+    .attr("r", (d) => z(cleanData(d.population) * 5))
+    // .attr("r", 10)
     .style("fill", "#69b3a2")
     .style("opacity", "0.7")
     .attr("stroke", "black");
+}
+
+function cleanData(data) {
+  if (isNaN(data)) {
+    if (data.includes("k")) {
+      const n = data.split("k")[0];
+      return Number.parseFloat(n) * 1000;
+    } else if (data.includes("M")) {
+      const n = data.split("M")[0];
+      return Number.parseFloat(n) * 1000000;
+    }
+  }
+
+  return data;
 }
