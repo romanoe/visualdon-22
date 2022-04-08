@@ -12,6 +12,11 @@ Ce document sera mis à jour au fur et à mesure du semestre avec les informatio
 * [Exercice 1](https://github.com/romanoe/visualdon-22/tree/main/01-SVG): Dessiner et animer des formes SVG. ❗ Délai du rendu: **4 mars, 23h59** ❗
 * [Exercice 2](https://github.com/romanoe/visualdon-22/tree/main/02-intro-d3) : Introduction à D3 ❗ Délai du rendu: **11 mars, 23h59** ❗
 * [Exercice 3](https://github.com/romanoe/visualdon-22/tree/main/03-d3-data) : Données ❗ Délai du rendu: **23 mars, 23h59** ❗
+* [Exercice 4](https://github.com/romanoe/visualdon-22/tree/main/04-gapminder) 
+     * Visualisation statique ❗ Délai du rendu: **1 avril, 23h59** ❗
+     * Cartographie ❗ Délai du rendu: **8 avril, 23h59** ❗
+     * Animation ❗ Délai du rendu: **22 avril, 23h59** ❗
+
 
 ## Projet
 
